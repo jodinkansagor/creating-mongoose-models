@@ -40,7 +40,7 @@ describe('app routes', () => {
       });
   });
 
-  it('can find one skater', async() => {
+  it('can find one skater', async(done) => {
     const skater = await Skater.create({
       'name': 'Bonnie Thunders',
       'team': 'Wheels of Justice',
@@ -52,10 +52,11 @@ describe('app routes', () => {
       .get(`/${skater._id}`)
       .then(res => {
         expect(res.body).toEqual({ '__v': expect.any(Number), '_id': expect.any(String), 'name': 'Bonnie Thunders', 'positions': ['jammer'], 'skaterNumber': 340, 'team': 'Wheels of Justice' });
+        done();
       });
   });
 
-  it('can update a skater', async() => {
+  it('can update a skater', async(done) => {
     const skater = await Skater.create({
       'name': 'Tiggz',
       'team': 'Wreckers',
@@ -73,10 +74,11 @@ describe('app routes', () => {
       .get(`/${updatedSkater._id}`)
       .then(res => {
         expect(res.body).toEqual({ '__v': expect.any(Number), '_id': expect.any(String), 'name': 'Tiggz', 'positions': ['blocker'], 'skaterNumber': 97, 'team': 'Jewish Roller Derby' });
+        done();
       });
   });
 
-  it('can delete a skater', async() => {
+  it('can delete a skater', async(done) => {
     const skater = await Skater.create({
       'name': 'Tiggz',
       'team': 'Wreckers',
@@ -88,6 +90,7 @@ describe('app routes', () => {
       .get(`/${skater._id}`)
       .then(res => {
         expect(res.body).toEqual({ '__v': expect.any(Number), '_id': expect.any(String), 'name': 'Tiggz', 'positions': ['blocker'], 'skaterNumber': 97, 'team': 'Wreckers' });
+        done();
       });
   });
 
