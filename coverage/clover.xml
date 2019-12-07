@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1575674679635" clover="3.2.0">
-  <project timestamp="1575674679635" name="All files">
-    <metrics statements="43" coveredstatements="36" conditionals="0" coveredconditionals="0" methods="11" coveredmethods="6" elements="54" coveredelements="42" complexity="0" loc="43" ncloc="43" packages="3" files="7" classes="7"/>
+<coverage generated="1575678871600" clover="3.2.0">
+  <project timestamp="1575678871600" name="All files">
+    <metrics statements="49" coveredstatements="41" conditionals="0" coveredconditionals="0" methods="13" coveredmethods="8" elements="62" coveredelements="49" complexity="0" loc="49" ncloc="49" packages="3" files="7" classes="7"/>
     <package name="lib">
-      <metrics statements="20" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="4"/>
+      <metrics statements="26" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="6"/>
       <file name="app.js" path="C:\Users\jodin\alchemy\career-track\creating-mongoose-models\lib\app.js">
-        <metrics statements="20" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="4"/>
+        <metrics statements="26" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="6"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -14,18 +14,24 @@
         <line num="10" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
-        <line num="31" count="1" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
         <line num="32" count="1" type="stmt"/>
-        <line num="39" count="1" type="stmt"/>
-        <line num="44" count="1" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
         <line num="46" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
         <line num="48" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
         <line num="55" count="1" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="63" count="1" type="stmt"/>
       </file>
     </package>
     <package name="lib.Models">
