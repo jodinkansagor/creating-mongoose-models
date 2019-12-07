@@ -14,9 +14,9 @@ describe('app routes', () => {
     return mongoose.connection.dropDatabase();
   });
 
-  // afterAll(() => {
-  //   return mongoose.connection.close();
-  // });
+  afterAll(() => {
+    return mongoose.connection.close();
+  });
 
   it('has an addskaters page where one can add skaters', () => {
     return request(app)
