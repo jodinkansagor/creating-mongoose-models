@@ -88,7 +88,7 @@ describe('app routes', () => {
     });
 
     return request(app)
-      .get(`/${skater._id}`)
+      .delete(`/${skater._id}`)
       .then(res => {
         expect(res.body).toEqual({ '__v': expect.any(Number), '_id': expect.any(String), 'name': 'Tiggz', 'positions': ['blocker'], 'skaterNumber': 97, 'team': 'Wreckers' });
         done();
