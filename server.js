@@ -4,5 +4,5 @@ const app = require('./lib/app');
 
 
 app.listen('8081', () => {
-  console.log('you got this!');
+  console.log('Server is started. You got this! ');
 });

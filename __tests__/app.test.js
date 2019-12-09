@@ -1,5 +1,5 @@
 require('dotenv').config();
-require('../lib/utils/connect')();
+const connect = require('../lib/utils/connect');
 const request = require('supertest');
 const app = require('../lib/app');
 const mongoose = require('mongoose');
@@ -7,9 +7,10 @@ const Skater = require('../lib/Models/Skater');
 
 describe('app routes', () => {
 
-  // beforeAll(() => {
-  //   connect();
-  // });
+  beforeAll(() => {
+    connect();
+  });
+
   beforeAll(() => {
     return mongoose.connection.dropDatabase();
   });
